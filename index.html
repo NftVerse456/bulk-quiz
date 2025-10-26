@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuizForge — Fun 3‑minute quizzes with instant results</title>
+  <meta name="description" content="Short, smart quizzes you can finish on a coffee break. 12 questions. Instant results. New quizzes weekly." />
+  <meta property="og:title" content="QuizForge — Fun 3‑minute quizzes" />
+  <meta property="og:description" content="12 bite‑size questions. Instant results. New quizzes weekly." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='100%25' height='100%25' rx='12' fill='%239C4DFF'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-size='40' font-family='sans-serif' fill='white'%3EQ%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"><span class="brand-icon">🧠</span> QuizForge</a>
+
+      <!-- Mobile menu toggle (CSS-only) -->
+      <input type="checkbox" id="nav-check" class="nav-check" aria-label="Toggle navigation" />
+      <label for="nav-check" class="nav-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="site-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#quiz" class="nav-link">Take the Quiz</a>
+        <a href="#how" class="nav-link">How it Works</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#quiz" class="btn btn-sm btn-primary">Start</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Challenge your brain in 3 minutes</h1>
+          <p class="lead">12 bite‑size questions. Instant results. New quizzes weekly.</p>
+          <div class="cta-row">
+            <a href="#quiz" class="btn btn-primary">Start the Quiz</a>
+            <a href="#subscribe" class="btn btn-ghost">Get weekly quizzes</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>Free and fun</li>
+            <li>Instant scoring</li>
+            <li>Shareable results</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="orb orb-c"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features">
+      <div class="container">
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">🎯</div>
+            <h3>Quick & bite‑size</h3>
+            <p>Finish in under 3 minutes—perfect for coffee breaks.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Instant results</h3>
+            <p>See your score and a friendly rank right away.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🔗</div>
+            <h3>Shareable</h3>
+            <p>Challenge your friends to beat your score.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section how">
+      <div class="container">
+        <header class="section-head">
+          <h2>How it works</h2>
+          <p>Three simple steps to test your knowledge.</p>
+        </header>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h4>Hit Start</h4>
+            <p>Jump into a 12‑question quiz—no signup required.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h4>Answer questions</h4>
+            <p>Select your best answer for each question.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h4>See results</h4>
+            <p>Instant score and a friendly title you can share.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="section quiz">
+      <div class="container">
+        <header class="section-head">
+          <h2>General Knowledge Quiz</h2>
+          <p class="muted">Select one answer per question. This HTML/CSS version doesn’t score yet—ask me to add script.js for instant results.</p>
+        </header>
+
+        <form class="quiz-form" action="#results" method="get" novalidate>
+          <!-- Q1 -->
+          <fieldset class="q">
+            <legend>1) What is the capital of Canada?</legend>
+            <label><input type="radio" name="q1" value="A" required /> Ottawa</label>
+            <label><input type="radio" name="q1" value="B" /> Toronto</label>
+            <label><input type="radio" name="q1" value="C" /> Vancouver</label>
+            <label><input type="radio" name="q1" value="D" /> Montreal</label>
+          </fieldset>
+
+          <!-- Q2 -->
+          <fieldset class="q">
+            <legend>2) Which planet currently has the most confirmed moons?</legend>
+            <label><input type="radio" name="q2" value="A" required /> Jupiter</label>
+            <label><input type="radio" name="q2" value="B" /> Saturn</label>
+            <label><input type="radio" name="q2" value="C" /> Mars</label>
+            <label><input type="radio" name="q2" value="D" /> Uranus</label>
+          </fieldset>
+
+          <!-- Q3 -->
+          <fieldset class="q">
+            <legend>3) What is the chemical symbol for Potassium?</legend>
+            <label><input type="radio" name="q3" value="A" required /> P</label>
+            <label><input type="radio" name="q3" value="B" /> Po</label>
+            <label><input type="radio" name="q3" value="C" /> Pt</label>
+            <label><input type="radio" name="q3" value="D" /> K</label>
+          </fieldset>
+
+          <!-- Q4 -->
+          <fieldset class="q">
+            <legend>4) Who painted “The Starry Night”?</legend>
+            <label><input type="radio" name="q4" value="A" required /> Claude Monet</label>
+            <label><input type="radio" name="q4" value="B" /> Pablo Picasso</label>
+            <label><input type="radio" name="q4" value="C" /> Frida Kahlo</label>
+            <label><input type="radio" name="q4" value="D" /> Vincent van Gogh</label>
+          </fieldset>
+
+          <!-- Q5 -->
+          <fieldset class="q">
+            <legend>5) Which plant can grow the fastest?</legend>
+            <label><input type="radio" name="q5" value="A" required /> Sunflower</label>
+            <label><input type="radio" name="q5" value="B" /> Bamboo</label>
+            <label><input type="radio" name="q5" value="C" /> Cactus</label>
+            <label><input type="radio" name="q5" value="D" /> Oak</label>
+          </fieldset>
+
+          <!-- Q6 -->
+          <fieldset class="q">
+            <legend>6) Which language has the most native speakers?</legend>
+            <label><input type="radio" name="q6" value="A" required /> English</label>
+            <label><input type="radio" name="q6" value="B" /> Spanish</label>
+            <label><input type="radio" name="q6" value="C" /> Mandarin Chinese</label>
+            <label><input type="radio" name="q6" value="D" /> Hindi</label>
+          </fieldset>
+
+          <!-- Q7 -->
+          <fieldset class="q">
+            <legend>7) In what year did the World Wide Web go public?</legend>
+            <label><input type="radio" name="q7" value="A" required /> 1987</label>
+            <label><input type="radio" name="q7" value="B" /> 1989</label>
+            <label><input type="radio" name="q7" value="C" /> 1991</label>
+            <label><input type="radio" name="q7" value="D" /> 1995</label>
+          </fieldset>
+
+          <!-- Q8 -->
+          <fieldset class="q">
+            <legend>8) How many bits are in a byte?</legend>
+            <label><input type="radio" name="q8" value="A" required /> 4</label>
+            <label><input type="radio" name="q8" value="B" /> 8</label>
+            <label><input type="radio" name="q8" value="C" /> 16</label>
+            <label><input type="radio" name="q8" value="D" /> 32</label>
+          </fieldset>
+
+          <!-- Q9 -->
+          <fieldset class="q">
+            <legend>9) What gas is most abundant in Earth’s atmosphere?</legend>
+            <label><input type="radio" name="q9" value="A" required /> Oxygen</label>
+            <label><input type="radio" name="q9" value="B" /> Carbon dioxide</label>
+            <label><input type="radio" name="q9" value="C" /> Nitrogen</label>
+            <label><input type="radio" name="q9" value="D" /> Argon</label>
+          </fieldset>
+
+          <!-- Q10 -->
+          <fieldset class="q">
+            <legend>10) Which is the largest ocean on Earth?</legend>
+            <label><input type="radio" name="q10" value="A" required /> Atlantic</label>
+            <label><input type="radio" name="q10" value="B" /> Indian</label>
+            <label><input type="radio" name="q10" value="C" /> Arctic</label>
+            <label><input type="radio" name="q10" value="D" /> Pacific</label>
+          </fieldset>
+
+          <!-- Q11 -->
+          <fieldset class="q">
+            <legend>11) Which country is credited with inventing paper?</legend>
+            <label><input type="radio" name="q11" value="A" required /> Egypt</label>
+            <label><input type="radio" name="q11" value="B" /> China</label>
+            <label><input type="radio" name="q11" value="C" /> Greece</label>
+            <label><input type="radio" name="q11" value="D" /> India</label>
+          </fieldset>
+
+          <!-- Q12 -->
+          <fieldset class="q">
+            <legend>12) Who was the first woman to win a Nobel Prize?</legend>
+            <label><input type="radio" name="q12" value="A" required /> Rosalind Franklin</label>
+            <label><input type="radio" name="q12" value="B" /> Marie Curie</label>
+            <label><input type="radio" name="q12" value="C" /> Ada Lovelace</label>
+            <label><input type="radio" name="q12" value="D" /> Jane Goodall</label>
+          </fieldset>
+
+          <div class="quiz-actions">
+            <button type="submit" class="btn btn-primary">Submit (demo)</button>
+            <a href="#home" class="btn btn-ghost">Restart</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Results (static placeholder) -->
+    <section id="results" class="section results">
+      <div class="container">
+        <header class="section-head">
+          <h2>Your results</h2>
+          <p class="muted">This section will show your score once JS is added.</p>
+        </header>
+        <div class="result-grid">
+          <article class="result-card">
+            <h3>Explorer 🌱</h3>
+            <p>Great start! Keep going and you’ll level up fast.</p>
+          </article>
+          <article class="result-card">
+            <h3>On the Rise ✨</h3>
+            <p>Nice work! A few more quizzes and you’ll be a pro.</p>
+          </article>
+          <article class="result-card">
+            <h3>Quiz Master 🏆</h3>
+            <p>You crushed it. Share your score and challenge a friend!</p>
+          </article>
+        </div>
+        <div class="results-cta">
+          <a href="#quiz" class="btn btn-primary">Try again</a>
+          <a href="#subscribe" class="btn btn-ghost">Get weekly quizzes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section id="subscribe" class="section subscribe">
+      <div class="container subscribe-inner">
+        <header>
+          <h2>Get a fresh quiz every Friday</h2>
+          <p class="muted">No spam. Unsubscribe anytime.</p>
+        </header>
+        <!-- Replace action with your email service endpoint (e.g., Formspree) -->
+        <form class="subscribe-form" action="https://formspree.io/f/your-endpoint" method="POST">
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <header class="section-head">
+          <h2>About QuizForge</h2>
+          <p>We make learning addictive with short, smart quizzes you can finish on a coffee break—no signup required.</p>
+        </header>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <header class="section-head">
+          <h2>Contact</h2>
+          <p>Questions, ideas, or feedback? We’d love to hear from you.</p>
+        </header>
+        <form class="contact-form" action="https://formspree.io/f/your-endpoint" method="POST">
+          <div class="grid-2">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+          </div>
+          <textarea name="message" rows="5" placeholder="Your message"></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#"><span class="brand-icon">🧠</span> QuizForge</a>
+      <p class="muted">© <span id="year"></span> QuizForge. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional inline year update (no scoring logic) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
